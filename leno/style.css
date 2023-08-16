@@ -1,0 +1,297 @@
+@font-face {
+    font-family: "Compoundry";
+    src: url(../assets/lenameier.github.io/CompoundryVF12.woff2)
+}
+
+body {background-color: #white;
+    font-family: Compoundry;
+overflow-x: hidden;}
+
+.names{
+    font-family: Compoundry;
+    color: red;
+    font-size: 70px;
+    font-variation-settings: 'HRZT'100, 'VRCL' 100;
+    text-align: left;
+    margin-bottom: -30px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.headline-text {
+    font-family: Compoundry;
+    font-size: 180px;
+    letter-spacing: -2px;
+    line-height: 79%;
+    color: red;
+    font-variation-settings: 'HRZT'900, 'VRCL' 100;
+
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    text-align: left;
+
+}
+
+
+.type1 {
+    font-family: Compoundry;
+    font-variation-settings: 'HRZT' 100, 'VRCL' 100;
+    font-size: 40px;
+    line-height: 100%;
+    color: red;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.right1{
+    text-align: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left:25vw;
+    margin-right: 20px;
+    font-variation-settings: 'HRZT' 100, 'VRCL' 100;
+}
+
+.left2{
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 25vw;
+    margin-left: 20px;
+    font-variation-settings: 'HRZT' 266, 'VRCL' 263;
+}
+
+.right3{
+    text-align: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left:25vw;
+    margin-right: 20px;
+    font-variation-settings: 'HRZT' 354, 'VRCL' 372;
+}
+
+.left4{
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 25vw;
+    margin-left: 20px;
+    font-variation-settings: 'HRZT' 541, 'VRCL' 529;
+}
+
+.right5{
+    text-align: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left:25vw;
+    margin-right: 20px;
+    font-variation-settings: 'HRZT' 624, 'VRCL' 599;
+}
+
+.left6{
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 25vw;
+    margin-left: 20px;
+    font-variation-settings: 'HRZT' 754, 'VRCL' 729;
+}
+
+.right7{
+    text-align: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left:25vw;
+    margin-right: 20px;
+    font-variation-settings: 'HRZT' 900, 'VRCL' 900;
+}
+
+
+.pattern {
+    width: 80%;
+    background-image: url('../assets/lenameier.github.io/Pattern_big-03.svg');
+    background-size: cover;
+
+    height: 0;
+    padding: 0;
+    padding-bottom: 80%;
+    margin-top: -270px;
+    margin-right: 35vw;
+    margin-left: -20vw;
+
+
+}
+
+.img-text {
+    margin-top: -315px;
+    margin-bottom:40px;
+    margin-right: 20px;
+    font-size: 130px;
+    text-align: right;
+    color: red;
+    font-variation-settings: 'HRZT' 900, 'VRCL' 900;
+    animation: headline-animation infinite alternate;
+    animation-duration: 5s;
+
+}
+
+@keyframes headline-animation {
+    0%{font-variation-settings: 'HRZT'100, 'VRCL' 100;}
+
+    33%{font-variation-settings: 'HRZT'900, 'VRCL'100;}
+
+    66%{font-variation-settings: 'HRZT'900, 'VRCL' 900;}
+
+    100%{font-variation-settings: 'HRZT'100, 'VRCL' 900;}
+
+}
+
+.variable-text{
+    font-family: Compoundry;
+    font-size: 80px;
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+
+#input{
+    font-family: Compoundry;
+}
+input[type="range"]::-moz-range-track {
+    background: red;
+    height: 5px;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    background: red;
+    height: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background: black;
+
+    margin-top: -5px;
+    border-radius: 50%;
+}
+
+
+
+
+
+.display {
+    display: none;
+    transition: 1s;
+}
+
+.img-pos-left{
+    position:absolute;
+    max-width: 23vw;
+    left:-25vw;
+    transition: 1s;
+}
+
+.img-pos-right{
+    position:absolute;
+    max-width: 23vw;
+    max-height: 50vh;
+    right:-25vw;
+    transition: 1s;
+}
+
+.animation-left{
+    animation: fadein-left 1s forwards;
+}
+
+@keyframes fadein-left{
+    0%{
+        left: -25vw;
+    }
+    100%{
+        left: 20px;
+    }
+}
+
+.animation-right{
+    animation: fadein-right 1s forwards;
+}
+
+@keyframes fadein-right{
+    0%{
+        right: -25vw;
+    }
+    100%{
+        right: 20px;
+    }
+}
+
+.pattern1_rechts {
+    position:absolute;
+    width: 40%;
+    background-image: url('../assets/lenameier.github.io/Pattern_3_rechts-03.svg');
+    background-size: cover;
+    padding: 0;
+    margin-top: -80px;
+    margin-left: 75vw;
+    padding-bottom:50%;
+}
+
+.pattern2_links {
+    position:absolute;
+    width: 40%;
+    background-image: url('../assets/lenameier.github.io/Pattern_6_links-03.svg');
+    background-size: cover;
+    height: 0;
+    padding: 0;
+    padding-bottom: 50%;
+    margin-top: -250px;
+    margin-left: -15vw;
+
+}
+
+/.fading:hover {
+    transition: 3s;
+    opacity: 20%;
+}
+
+.overview{
+
+    font-size: 40px;
+    margin-top:60px;
+    margin-bottom:20px;
+    text-align: center;
+    color: red;
+    font-variation-settings: 'HRZT' 900, 'VRCL' 900;
+
+}
+
+.explain{
+    font-size: 30px;
+    color: red;
+    margin-left: 25vw;
+    margin-right: 20px;
+    margin-bottom: 120px;
+    margin-top: -20px;
+
+    text-align: right;
+}
+
+
+.fusszeile{
+    color: red;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    font-size: 16px;
+
+}

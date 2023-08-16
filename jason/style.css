@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "Latin_Bubble";
+    src: url(../assets/jasontsiakas.github.io/Latin_bubble.ttf);
+}
+
+@font-face {
+    font-family: "From_A_to_O";
+    src: url(../assets/jasontsiakas.github.io/FromAtoOVF.ttf);
+}
+
+body {
+    background-color: #62FFED;
+    margin: 0;
+}
+
+.Background {
+    margin-top: 210vh;
+    width: 100%;
+    scale: 152%;
+}
+
+.Headline {
+    font-family: "Latin_Bubble";
+    font-size: 310px;
+    color: #FF6A7B;
+    padding-top: 3vh;
+    padding-bottom: 0;
+    margin-bottom: 10vw;
+    padding-left: 5vw;
+    line-height: 0.9;
+    margin-top: 0;
+}
+
+.Fliesstext1 {
+    font-family: "Latin_Bubble";
+    font-size: 70px;
+    color: #FF6A7B;
+    padding-left: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 0;
+}
+
+.Fliesstext2 {
+    font-family: "Latin_Bubble";
+    font-size: 70px;
+    color: #FF6A7B;
+    padding-top: 5vw;
+    margin-top: 0;
+    padding-right: 5vw;
+    text-align: right;
+}
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    justify-items: center;
+    align-items: center;
+}
+
+.vfont1a {
+    font-family: "From_A_to_O";
+    font-size: 1000px;
+    color: #FF6A7B;
+    /* grid-area: ROW START / COLUMN START / ROW END / COLUMN END */
+    padding-top: 0;
+    margin-top: 0;
+    line-height: 0.95;
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    animation: my-animation  4s infinite alternate;
+}
+
+@keyframes my-animation {
+    0% {
+        font-variation-settings: "slnt" 0;
+    }
+    100% {
+        font-variation-settings: "slnt" 900;
+    }
+}
+
+
+.grid-item1 {
+    font-family: "Latin_Bubble";
+    font-size: 70px;
+    color: #62FFED;
+    webkit-text-fill-color: transparent; /* Hide the fill color */
+    -webkit-text-stroke-width: 1.5px; /* Set the stroke width */
+    -webkit-text-stroke-color: #FF6A7B; /* Set the stroke color */
+    text-align: right;
+    line-height: 0.95;
+    margin-top: -35vw;
+    margin-left: -15vw;
+    grid-column: 2;
+    grid-row: 1;
+    transform: rotate(0deg);
+    animation: Fade1 1s forwards;  
+    animation-delay: 3s;
+    opacity: 0;
+    /* position: relative; */
+}
+
+@keyframes Fade1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.grid-item2 {
+    font-family: "Latin_Bubble";
+    font-size: 70px;
+    color: #62FFED;
+    webkit-text-fill-color: transparent; /* Hide the fill color */
+    -webkit-text-stroke-width: 1.5px; /* Set the stroke width */
+    -webkit-text-stroke-color: #FF6A7B; /* Set the stroke color */
+    text-align: left;
+    line-height: 0.95;
+    margin-top: -2vw;
+    margin-left: -18vw;
+    grid-column: 4;
+    grid-row: 1;
+    transform: rotate(0deg);
+    animation: Fade2 1s forwards;  
+    animation-delay: 5s;
+    opacity: 0;
+    /* position: relative; */
+
+}
+
+@keyframes Fade2 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.grid-item3 {
+    font-family: "Latin_Bubble";
+    font-size: 120px;
+    color: #62FFED;
+    text-align: right;
+    line-height: 0.95;
+    webkit-text-fill-color: transparent; /* Hide the fill color */
+    -webkit-text-stroke-width: 1.5px; /* Set the stroke width */
+    -webkit-text-stroke-color: #FF6A7B; /* Set the stroke color */
+    margin-top: 15vw;
+    margin-left: -7vw;
+    grid-column: 1;
+    grid-row: 1;
+    transform: rotate(-90deg);
+}
+
+.grid-item4 {
+    font-family: "Latin_Bubble";
+    font-size: 120px;
+    color: #62FFED;
+    text-align: right;
+    line-height: 0.95;
+    webkit-text-fill-color: transparent; /* Hide the fill color */
+    -webkit-text-stroke-width: 1.5px; /* Set the stroke width */
+    -webkit-text-stroke-color: #FF6A7B; /* Set the stroke color */
+    margin-top: 27vw;
+    margin-left: 0vw;
+
+    grid-column: 3;
+    grid-row: 1;
+    transform: rotate(-90deg);
+}
+
+.LINE {
+    height: 34px;
+    border: none;
+    background-color: #FF6A7B;
+    margin: 0;
+    width: 85%;
+}
+
+.LINE2 {
+    height: 34px;
+    border: none;
+    background-color: #FF6A7B;
+    margin: 0;
+    width: 37%;
+    position: absolute; 
+    right: 0;
+}
+
+#SCHIEBER {
+    transition: transform 1.5s ease-in-out; /* Add a transition property for smooth animation */
+}
+
+.schieber-animate {
+    transform: translateX(300px); /* Adjust the desired animation position */
+}
+
+
+.vfont2 {
+    font-family: "From_A_to_O";
+    font-size: 300px;
+    color: #FF6A7B;
+    text-align: center;
+    line-height: 0.9;
+    width: 100vw;
+    position: absolute;
+    margin-top: -15vh;
+    padding-bottom: 50vw;
+    animation: my-animation 5s infinite alternate;
+}
+
+@keyframes my-animation {
+    0% {
+        font-variation-settings: "slnt" 0;
+    }
+    100% {
+        font-variation-settings: "slnt" 900;
+    }
+}
+
+.End {
+    margin-top: 220vh;
+    width: 100%;
+    scale: 152%;
+}

@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "diszlexia";
+    src: url("../assets/doraderczbach.github.io/diszlexia_05VF.woff2");
+}
+
+.line-1 {
+    border-bottom: 1px solid white;
+    width: auto;
+    position: relative;
+    padding-top: 24px;
+    margin-bottom: 12px;
+}
+
+.line-2 {
+    border-bottom: 1px solid white;
+    width: auto;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 100px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin:0 5vw;
+}
+
+.left-headline {
+    font-family: "diszlexia";
+    font-size: 20px;
+    text-align: left;
+    display: inline-block;
+    font-variation-settings: 'wdth' 100, 'wght' 100;
+    animation: top-headline infinite alternate ;
+    animation-duration: 2s;
+}
+
+.right-headline {
+    font-family: "diszlexia";
+    font-size: 20px;
+    text-align: right;
+    float: right;
+    display: inline-block;
+    top: 20px;
+    right: 12px;
+    font-variation-settings: 'wdth' 900, 'wght' 100;
+    animation: headline-animation infinite alternate ;
+    animation-duration: 2s;
+}
+
+.headline {
+    font-family: "diszlexia";
+    font-size: 160px;
+    text-align: center;
+    position: relative;
+
+    font-variation-settings: 'wdth' 900, 'wght' 500;
+    animation: headline-animation infinite alternate ;
+    animation-duration: 2s;
+}
+
+@keyframes headline-animation {
+    0%{
+        font-variation-settings: 'wdth' 900, 'wght' 900;
+
+    }
+    100%{
+        font-variation-settings: 'wdth' 100, 'wght' 100;
+    }
+}
+
+.line-3 {
+    border-bottom: 1px solid white;
+    width: auto;
+    position: relative;
+    padding-top: 100px;
+    margin-bottom: 30px;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 1px;
+    background: white;
+    margin-bottom: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background: white;
+    margin-top: 0px;
+    border-radius: 100%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    background: white;
+    margin-top: 0px;
+    border-radius: 100%;
+}
+
+label {
+    font-family: "diszlexia";
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    width:50%;/* Helyezze a labelt a jobb oldalra */
+}
+
+#value-wght,
+#value-wdth {
+    font-family: "diszlexia";
+    font-size: 12px;
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+#toggleButton {
+    font-family: "diszlexia";
+    font-size: 12px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.headline-text {
+    text-align: center;
+    line-height: 0.5;
+}
+
+p {
+    padding: 10px;
+    font-family: "diszlexia";
+    font-size: 40px;
+    white-space: break-spaces;
+    font-variation-settings: 'wdth' 900, 'wght' 100;
+    animation: text-animation infinite alternate;
+    animation-duration: 2s;
+    position: relative;
+}
+
+@keyframes text-animation {
+    0% {
+        font-variation-settings: 'wdth' 100, 'wght' 100;
+        color: white;
+    }
+    100% {
+        font-variation-settings: 'wdth' 900, 'wght' 100;
+        color: white;
+    }
+}
+
+
+@keyframes top-headline {
+    0%{
+        font-variation-settings: 'wdth' 100, 'wght' 400;
+
+    }
+    100%{
+        font-variation-settings: 'wdth' 900, 'wght' 400;
+    }
+}
+
+details summary {
+    border-top: 1px solid #aaa;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary {
+    list-style: none;
+    position: relative;
+}
+
+details > summary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #aaa;
+}
+
+.line-4 {
+    border: 0.5px solid white;
+    width: auto;
+    position: relative;
+    top: 10px;
+}
+
+.original-test {
+    font-family: "diszlexia";
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+.contact-info {
+    font-family: "diszlexia";
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 80px;
+    left: 10px;
+}
+
+.info {
+    font-family: "diszlexia";
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}

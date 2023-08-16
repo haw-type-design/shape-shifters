@@ -1,0 +1,417 @@
+@font-face {
+    font-family: "GillSucks";
+    src: url("../assets/meretlafin.github.io/GillsucksVF.woff2")
+}
+
+html {
+    font-size: 18pt;
+    background-color: #eae3ee;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "GillSucks";
+    scroll-behavior: smooth;
+}
+
+/*TRIGGER WARNING PAGE*/
+
+.warning {
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #785bff;
+    position: absolute;
+}
+
+.warning-headline {
+    color: #eae3ee;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 30vh;
+}
+
+.warning-text {
+    color: #eae3ee;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.x {
+    color: #eae3ee;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    text-align: right;
+    cursor: pointer;
+}
+
+/*DROPDOWN MENU*/
+
+button {
+    font-family: "GillSucks";
+}
+
+.dropbtn {
+    background-color: #ff9219;
+    color: #eae3ee;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    filter: brightness(90%);
+}
+
+.dropdown {
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #ff9219;
+    margin: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+}
+
+.dropdown a:hover {
+    filter: brightness(80%);
+}
+
+.show {display: block;
+}
+
+/*MAIN PAGE*/
+
+h1 {
+    margin-top: 1rem;
+    margin-left: 5vw;
+    font-size: 6rem;
+    line-height: 90%;
+    color: #785bff;
+    margin-bottom: 2rem;
+}
+
+
+/*  animation: headline-animation infinite alternate linear;
+animation-duration: 3s; */
+
+@keyframes split-animation {
+    0% { font-variation-settings: 'SPLT'0;
+    }
+    33% { font-variation-settings: 'SPLT'-500;
+    }
+    66% { font-variation-settings: 'SPLT'0;
+    }
+    100% { font-variation-settings: 'SPLT' 500;
+    }
+}
+
+.animation:hover {
+    animation: split-animation infinite alternate linear;
+    animation-duration: 4s;
+    overflow: visible;
+}
+
+.animation {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+p {
+    color: #785bff;
+}
+
+span {
+    color: #785bff;
+}
+
+.layer-color {
+    color: #ff9219;
+}
+
+.difference {
+    mix-blend-mode: screen;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-left: 5vw;
+    margin-right: 10vw;
+}
+
+.subline {
+    font-size: 1.5rem;
+    margin-left: 30vw;
+    margin-right: 10vw;
+    margin-bottom: 1rem;
+}
+
+.text-r {
+    font-size: 1rem;
+    margin-right: 10vw;
+    margin-left:30vw;
+}
+
+.text-l {
+    font-size: 1rem;
+    margin-right: 30vw;
+    margin-left:10vw;
+}
+
+.img1 {
+    width: 20vw;
+    margin-left: 5vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0rem 0rem 1rem #785bff;
+}
+
+.img2 {
+    width: 35vw;
+    margin-left: 60vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0rem 0rem 1rem #785bff;
+}
+
+.img3 {
+    width: 35vw;
+    margin-left: 5vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0rem 0rem 1rem #785bff;
+}
+
+/*SCROLL EFFECT*/
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax__layer--base {
+    transform: translateZ(0.5px) scale(0.5);
+    top:57rem;
+}
+.parallax__layer--back {
+    transform: translateZ(0);
+}
+
+.parallax__group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+
+/*FONT*/
+
+.textleft {
+    text-align: left;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.textright {
+    text-align: right;
+}
+
+.textblock {
+    text-align: justify;
+}
+
+.split {
+    font-variation-settings: "SPLT" 500;
+}
+
+.padding {
+    padding: 2rem;
+}
+
+/*size*/
+
+
+
+.font-xs {
+    font-size: 0.5rem;
+}
+
+.font-s {
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.font-m {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.font-l {
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+}
+
+.font-xl {
+    font-size: 4rem;
+    line-height: 4.2rem;
+}
+
+.font-xxl {
+    font-size: 6.5rem;
+    line-height: 6.8rem;
+}
+
+/*position horizontal*/
+
+.marginl-xs {
+    margin-left: 5vw;
+}
+
+.marginl-s {
+    margin-left: 10vw;
+}
+
+.marginl-m {
+    margin-left: 20vw;
+}
+
+.marginl-l {
+    margin-left: 30vw;
+}
+
+.marginl-xl {
+    margin-left: 50vw;
+}
+
+.marginl-xxl {
+    margin-left: 60vw;
+}
+
+.marginr-xs {
+    margin-right: 5vw;
+}
+
+.marginr-s {
+    margin-right: 10vw;
+}
+
+.marginr-m {
+    margin-right: 20vw;
+}
+
+.marginr-l {
+    margin-right: 30vw;
+}
+
+.marginr-xl {
+    margin-right: 50vw;
+}
+
+
+/*LAYOUT MARGINS*/
+.space-xs {
+    margin-top: 1rem;
+}
+
+.space-s {
+    margin-top: 27rem;
+}
+.space-m {
+    margin-top: 42rem;
+}
+
+.space-l {
+    margin-top: 72rem;
+}
+
+.space-xl {
+    margin-top: 109rem;
+}
+
+.space-xxl {
+    margin-top: 151rem;
+}
+
+.space-3xl {
+    margin-top: 256rem;
+}
+
+
+/*GLYPHS SET LAYOUT*/
+
+
+.glyphs-title {
+    margin-top: 9rem;
+    text-align: left;
+}
+
+.ending {
+    background-color: #ff9219;
+    color: #eae3ee;
+    padding-left: 10vw;
+    padding-right: 30vw;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.ending-text {
+    color: #eae3ee;
+}
+
+/*RESPONSIVE*/
+@media (max-width:1100px){
+    html {
+        font-size: 14pt;
+    }
+}
+
+@media (max-width:720px){
+    html {
+        font-size: 10pt;
+    }
+}
+
+
+@media (min-width:2100px){
+    html {
+        font-size: 30pt;
+    }
+}
+
+@media (min-width:3200px){
+    html {
+        font-size: 40pt;
+    }
+}

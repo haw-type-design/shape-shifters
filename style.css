@@ -1,0 +1,899 @@
+/*Importing fonts*/
+@font-face {
+  font-family: "Gillsucks";
+  src: url("https://meretlafin.github.io/GillsucksVF.woff2");
+}
+@font-face {
+  font-family: "Regibility";
+  src: url("https://raw.githubusercontent.com/deladose/font/main/regibilityVF.woff2");
+}
+@font-face {
+  font-family: "Split Flap";
+  src: url("https://lo123z.github.io/SplitFlapTestVF.woff2");
+}
+@font-face {
+  font-family: "Rigorosa";
+  src: url("https://rasmusvongoetz.github.io/Rigorosa-medium.woff2");
+}
+@font-face {
+  font-family: "Rigorosa Mono";
+  src: url("https://rasmusvongoetz.github.io/Rigorosa-Mono.woff2");
+}
+@font-face {
+  font-family: "Locus";
+  src: url("https://LeniMeier.github.io/LocusfontVF.ttf");
+}
+@font-face {
+  font-family: "Visibilita";
+  src: url("https://MaikeSchafrinski.github.io/VisibilitaVF.ttf");
+}
+@font-face {
+  font-family: "From A to O";
+  src: url("https://jasontsiakas.github.io/FromAtoOVF.ttf");
+}
+@font-face {
+  font-family: "Inkohliso";
+  src: url("https://carloonly.github.io/Inkohliso.woff2");
+}
+@font-face {
+  font-family: "Pigumim";
+  src: url("https://yuvalbrokshtein.github.io/PigumimProcessVF.woff2");
+}
+@font-face {
+  font-family: "Denormalizer";
+  src: url("https://streitenverbindet.github.io/DenormalizerVF.ttf");
+}
+@font-face {
+  font-family: "Impossible Type";
+  src: url("https://phuongdang104.github.io/ImpossibletypefacefinalVF.woff2");
+}
+@font-face {
+  font-family: "Dyslexia";
+  src: url("https://doraderczbach.github.io/diszlexia_05VF.woff2");
+}
+@font-face {
+  font-family: "Dialog";
+  src: url("https://finnreduhn.github.io/DialogVF.ttf");
+}
+@font-face {
+  font-family: "Compoundry";
+  src: url("https://lenameier.github.io/CompoundryVF.woff2");
+}
+@font-face {
+  font-family: "Tile";
+  src: url("https://sannihoney7.github.io/TilesVF.woff2");
+}
+/*Body*/
+body {
+  background-color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-smooth: always;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.viewport {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*Cards*/
+.flip-card {
+  position: absolute;
+  z-index: 1000;
+  width: 300px;
+  height: 300px;
+  color: #000000;
+  cursor: pointer;
+}
+.flip-card .card-front, .flip-card .card-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 500ms;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  letter-spacing: 0.5px;
+  border-radius: 12px;
+  /*@include box-shadow(0px 0px 8px 0px rgba(0, 0, 0, 0.25));*/
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  background-color: #FFFFFF;
+}
+.flip-card .card-front {
+  padding: 35px 0px 0px 0px;
+  text-align: center;
+  transform: rotateY(0);
+  z-index: 900;
+}
+.flip-card .card-front.flipped {
+  transform: rotateY(180deg);
+}
+.flip-card .card-back {
+  padding: 12px 16px 24px 16px;
+  font-family: "Rigorosa Mono";
+  line-height: 130%;
+  transform: rotateY(-180deg);
+  z-index: 800;
+}
+.flip-card .card-back.flipped {
+  transform: rotateY(0deg);
+}
+
+/*Typography*/
+.letters {
+  font-size: 160px;
+}
+
+.font-info {
+  width: 100%;
+  font-size: 20px;
+  font-family: "Rigorosa Mono";
+  letter-spacing: 0.25px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.font-name {
+  text-transform: uppercase;
+}
+
+.text-title {
+  font-size: 24px;
+  padding: 0px 0px 12px 0px;
+}
+
+.text-info {
+  font-size: 20px;
+}
+
+/*Card 1 Styling*/
+#card-front1 {
+  background-color: #F04545;
+}
+
+@-webkit-keyframes gillsucks-animation {
+  0% {
+    font-variation-settings: "SPLT" 0;
+  }
+  30% {
+    font-variation-settings: "SPLT" 500;
+  }
+  60% {
+    font-variation-settings: "SPLT" -500;
+  }
+  100% {
+    font-variation-settings: "SPLT" 0;
+  }
+}
+
+@keyframes gillsucks-animation {
+  0% {
+    font-variation-settings: "SPLT" 0;
+  }
+  30% {
+    font-variation-settings: "SPLT" 500;
+  }
+  60% {
+    font-variation-settings: "SPLT" -500;
+  }
+  100% {
+    font-variation-settings: "SPLT" 0;
+  }
+}
+#card-front-meret {
+  font-family: "Gillsucks";
+  transition: font-variation-settings 0.3s ease;
+  -webkit-animation-name: gillsucks-animation;
+          animation-name: gillsucks-animation;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+/*Card 2 Styling*/
+#card-front2 {
+  background-color: #9A9EFF;
+}
+
+@-webkit-keyframes regibility-animation {
+  0% {
+    font-variation-settings: "wdth" 0, "slnt" 900;
+  }
+  30% {
+    font-variation-settings: "wdth" 900, "slnt" 450;
+  }
+  80% {
+    font-variation-settings: "wdth" 900, "slnt" 675;
+  }
+  100% {
+    font-variation-settings: "wdth" 0, "slnt" 0;
+  }
+}
+
+@keyframes regibility-animation {
+  0% {
+    font-variation-settings: "wdth" 0, "slnt" 900;
+  }
+  30% {
+    font-variation-settings: "wdth" 900, "slnt" 450;
+  }
+  80% {
+    font-variation-settings: "wdth" 900, "slnt" 675;
+  }
+  100% {
+    font-variation-settings: "wdth" 0, "slnt" 0;
+  }
+}
+#card-front-alex {
+  font-family: "Regibility";
+  transition: font-variation-settings 0.3s ease;
+  -webkit-animation-name: regibility-animation;
+          animation-name: regibility-animation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+/*Card 3 Styling*/
+#card-front3 {
+  background-color: #D0FF82;
+}
+
+@-webkit-keyframes split-flap-animation {
+  0% {
+    font-variation-settings: "wdth" 100, "UPSL" 900;
+  }
+  20% {
+    font-variation-settings: "wdth" 900, "UPSL" 450;
+  }
+  70% {
+    font-variation-settings: "wdth" 450, "UPSL" 0;
+  }
+  100% {
+    font-variation-settings: "wdth" 100, "UPSL" 900;
+  }
+}
+
+@keyframes split-flap-animation {
+  0% {
+    font-variation-settings: "wdth" 100, "UPSL" 900;
+  }
+  20% {
+    font-variation-settings: "wdth" 900, "UPSL" 450;
+  }
+  70% {
+    font-variation-settings: "wdth" 450, "UPSL" 0;
+  }
+  100% {
+    font-variation-settings: "wdth" 100, "UPSL" 900;
+  }
+}
+#card-front-lorenz {
+  font-family: "Split Flap";
+  transition: font-variation-settings 0.3s ease;
+  -webkit-animation-name: split-flap-animation;
+          animation-name: split-flap-animation;
+  -webkit-animation-duration: 4.5s;
+          animation-duration: 4.5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+/*Card 4 Styling*/
+#card-front4 {
+  background-color: #FCFF7C;
+}
+
+#card-front-rasmus {
+  font-family: "Rigorosa";
+  padding: 0;
+}
+
+@-webkit-keyframes locus-animation {
+  0% {
+    font-variation-settings: "BOLD" 0, "FINE" 100;
+  }
+  40% {
+    font-variation-settings: "BOLD" 60, "FINE" 20;
+  }
+  60% {
+    font-variation-settings: "BOLD" 20, "FINE" 40;
+  }
+  100% {
+    font-variation-settings: "BOLD" 100, "FINE" 0;
+  }
+}
+
+@keyframes locus-animation {
+  0% {
+    font-variation-settings: "BOLD" 0, "FINE" 100;
+  }
+  40% {
+    font-variation-settings: "BOLD" 60, "FINE" 20;
+  }
+  60% {
+    font-variation-settings: "BOLD" 20, "FINE" 40;
+  }
+  100% {
+    font-variation-settings: "BOLD" 100, "FINE" 0;
+  }
+}
+#card-front-lena2 {
+  font-family: "Locus";
+  transition: font-variation-settings 0.3s ease;
+  -webkit-animation-name: locus-animation;
+          animation-name: locus-animation;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+/*Card 5 Styling*/
+#card-front5 {
+  background-color: #FFADE8;
+  padding: 0px 0px 0px 0px;
+}
+
+/*Card 6 Styling*/
+#card-front6 {
+  background-color: #E8D5A5;
+}
+
+@-webkit-keyframes visibilita-animation {
+  0% {
+    font-variation-settings: "wght" 0;
+  }
+  20% {
+    font-variation-settings: "wght" 900;
+  }
+  30% {
+    font-variation-settings: "wght" 900;
+  }
+  100% {
+    font-variation-settings: "wght" 200;
+  }
+}
+
+@keyframes visibilita-animation {
+  0% {
+    font-variation-settings: "wght" 0;
+  }
+  20% {
+    font-variation-settings: "wght" 900;
+  }
+  30% {
+    font-variation-settings: "wght" 900;
+  }
+  100% {
+    font-variation-settings: "wght" 200;
+  }
+}
+#card-front-maike {
+  font-family: "Visibilita";
+  transition: font-variation-settings 0.3s ease;
+  -webkit-animation-name: visibilita-animation;
+          animation-name: visibilita-animation;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+/*Card 7 Styling*/
+#card-front7 {
+  background-color: #BA7FF5;
+}
+
+@-webkit-keyframes fromatoo-animation {
+  0% {
+    font-variation-settings: "slnt" 0;
+  }
+  40% {
+    font-variation-settings: "slnt" 900;
+  }
+  60% {
+    font-variation-settings: "slnt" 900;
+  }
+  100% {
+    font-variation-settings: "slnt" 0;
+  }
+}
+
+@keyframes fromatoo-animation {
+  0% {
+    font-variation-settings: "slnt" 0;
+  }
+  40% {
+    font-variation-settings: "slnt" 900;
+  }
+  60% {
+    font-variation-settings: "slnt" 900;
+  }
+  100% {
+    font-variation-settings: "slnt" 0;
+  }
+}
+#card-front-jason {
+  font-family: "From A to O";
+  transition: font-variation-settings 0.3s ease;
+  -webkit-animation-name: fromatoo-animation;
+          animation-name: fromatoo-animation;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+/*Card 8 Styling*/
+#card-front8 {
+  background-color: #9BCFFF;
+}
+
+@-webkit-keyframes inkohliso-animation {
+  0% {
+    font-variation-settings: "wght" 0;
+  }
+  40% {
+    font-variation-settings: "wght" 900;
+  }
+  60% {
+    font-variation-settings: "wght" 900;
+  }
+  100% {
+    font-variation-settings: "wght" 0;
+  }
+}
+
+@keyframes inkohliso-animation {
+  0% {
+    font-variation-settings: "wght" 0;
+  }
+  40% {
+    font-variation-settings: "wght" 900;
+  }
+  60% {
+    font-variation-settings: "wght" 900;
+  }
+  100% {
+    font-variation-settings: "wght" 0;
+  }
+}
+#card-front-carlotta {
+  font-family: "Inkohliso";
+  transition: font-variation-settings 0.3s ease;
+  -webkit-animation-name: inkohliso-animation;
+          animation-name: inkohliso-animation;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+/*Card 9 Styling*/
+#card-front9 {
+  background-color: #FDB827;
+}
+
+@-webkit-keyframes pigumim-animation {
+  0% {
+    font-variation-settings: "TIME" 900;
+  }
+  40% {
+    font-variation-settings: "TIME" 100;
+  }
+  60% {
+    font-variation-settings: "TIME" 100;
+  }
+  100% {
+    font-variation-settings: "TIME" 900;
+  }
+}
+
+@keyframes pigumim-animation {
+  0% {
+    font-variation-settings: "TIME" 900;
+  }
+  40% {
+    font-variation-settings: "TIME" 100;
+  }
+  60% {
+    font-variation-settings: "TIME" 100;
+  }
+  100% {
+    font-variation-settings: "TIME" 900;
+  }
+}
+#card-front-yuval {
+  font-family: "Pigumim";
+  transition: font-variation-settings 0.3s ease;
+  -webkit-animation-name: pigumim-animation;
+          animation-name: pigumim-animation;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+/*Card 10 Styling*/
+#card-front10 {
+  background-color: #89F9D0;
+}
+
+@-webkit-keyframes denormalizer-animation {
+  0% {
+    font-variation-settings: "wght" 900;
+  }
+  40% {
+    font-variation-settings: "wght" 100;
+  }
+  60% {
+    font-variation-settings: "wght" 600;
+  }
+  100% {
+    font-variation-settings: "wght" 300;
+  }
+}
+
+@keyframes denormalizer-animation {
+  0% {
+    font-variation-settings: "wght" 900;
+  }
+  40% {
+    font-variation-settings: "wght" 100;
+  }
+  60% {
+    font-variation-settings: "wght" 600;
+  }
+  100% {
+    font-variation-settings: "wght" 300;
+  }
+}
+#card-front-saige {
+  font-family: "Denormalizer";
+  transition: font-variation-settings 0.3s ease;
+  -webkit-animation-name: denormalizer-animation;
+          animation-name: denormalizer-animation;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+/*Card 11 Styling*/
+#card-front11 {
+  background-color: #F67A53;
+}
+
+@-webkit-keyframes impossible-animation {
+  0% {
+    font-variation-settings: "wght" 0, "ital" 50, "wdth" 70, "slnt" 20;
+  }
+  40% {
+    font-variation-settings: "wght" 100, "ital" 0, "wdth" 80, "slnt" 50;
+  }
+  60% {
+    font-variation-settings: "wght" 50, "ital" 20, "wdth" 90, "slnt" 0;
+  }
+  100% {
+    font-variation-settings: "wght" 20, "ital" 100, "wdth" 0, "slnt" 60;
+  }
+}
+
+@keyframes impossible-animation {
+  0% {
+    font-variation-settings: "wght" 0, "ital" 50, "wdth" 70, "slnt" 20;
+  }
+  40% {
+    font-variation-settings: "wght" 100, "ital" 0, "wdth" 80, "slnt" 50;
+  }
+  60% {
+    font-variation-settings: "wght" 50, "ital" 20, "wdth" 90, "slnt" 0;
+  }
+  100% {
+    font-variation-settings: "wght" 20, "ital" 100, "wdth" 0, "slnt" 60;
+  }
+}
+#card-front-phuong {
+  font-family: "Impossible Type";
+  transition: font-variation-settings 0.3s ease;
+  -webkit-animation-name: impossible-animation;
+          animation-name: impossible-animation;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+/*Card 12 Styling*/
+#card-front12 {
+  background-color: #99C76C;
+}
+
+@-webkit-keyframes dyslexia-animation {
+  0% {
+    font-variation-settings: "wght" 900, "wdth" 400;
+  }
+  40% {
+    font-variation-settings: "wght" 300, "wdth" 900;
+  }
+  60% {
+    font-variation-settings: "wght" 700, "wdth" 100;
+  }
+  100% {
+    font-variation-settings: "wght" 100, "wdth" 600;
+  }
+}
+
+@keyframes dyslexia-animation {
+  0% {
+    font-variation-settings: "wght" 900, "wdth" 400;
+  }
+  40% {
+    font-variation-settings: "wght" 300, "wdth" 900;
+  }
+  60% {
+    font-variation-settings: "wght" 700, "wdth" 100;
+  }
+  100% {
+    font-variation-settings: "wght" 100, "wdth" 600;
+  }
+}
+#card-front-dora {
+  font-family: "Dyslexia";
+  transition: font-variation-settings 0.3s ease;
+  -webkit-animation-name: dyslexia-animation;
+          animation-name: dyslexia-animation;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+/*Card 13 Styling*/
+#card-front13 {
+  background-color: #6A8BFF;
+}
+
+@-webkit-keyframes dialog-animation {
+  0% {
+    font-variation-settings: "wght" 0;
+  }
+  100% {
+    font-variation-settings: "wght" 10;
+  }
+}
+
+@keyframes dialog-animation {
+  0% {
+    font-variation-settings: "wght" 0;
+  }
+  100% {
+    font-variation-settings: "wght" 10;
+  }
+}
+#card-front-finn {
+  font-family: "Dialog";
+  transition: font-variation-settings 0.3s ease;
+  -webkit-animation-name: dialog-animation;
+          animation-name: dialog-animation;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.second-text-title {
+  margin-top: 24px;
+}
+
+/*Card 14 Styling*/
+#card-front14 {
+  background-color: #F8E117;
+}
+
+@-webkit-keyframes compoundry-animation {
+  0% {
+    font-variation-settings: "HRZT" 900, "VRCL" 100;
+  }
+  40% {
+    font-variation-settings: "HRZT" 300, "VRCL" 900;
+  }
+  60% {
+    font-variation-settings: "HRZT" 700, "VRCL" 100;
+  }
+  100% {
+    font-variation-settings: "HRZT" 100, "VRCL" 100;
+  }
+}
+
+@keyframes compoundry-animation {
+  0% {
+    font-variation-settings: "HRZT" 900, "VRCL" 100;
+  }
+  40% {
+    font-variation-settings: "HRZT" 300, "VRCL" 900;
+  }
+  60% {
+    font-variation-settings: "HRZT" 700, "VRCL" 100;
+  }
+  100% {
+    font-variation-settings: "HRZT" 100, "VRCL" 100;
+  }
+}
+#card-front-lena1 {
+  font-family: "Compoundry";
+  transition: font-variation-settings 0.3s ease;
+  -webkit-animation-name: compoundry-animation;
+          animation-name: compoundry-animation;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+/*Card 15 Styling*/
+#card-front15 {
+  background-color: #96FF64;
+}
+
+@-webkit-keyframes tile-animation {
+  0% {
+    font-variation-settings: "wght" 900, "wdth" 400;
+  }
+  40% {
+    font-variation-settings: "wght" 300, "wdth" 900;
+  }
+  60% {
+    font-variation-settings: "wght" 700, "wdth" 100;
+  }
+  100% {
+    font-variation-settings: "wght" 100, "wdth" 600;
+  }
+}
+
+@keyframes tile-animation {
+  0% {
+    font-variation-settings: "wght" 900, "wdth" 400;
+  }
+  40% {
+    font-variation-settings: "wght" 300, "wdth" 900;
+  }
+  60% {
+    font-variation-settings: "wght" 700, "wdth" 100;
+  }
+  100% {
+    font-variation-settings: "wght" 100, "wdth" 600;
+  }
+}
+#card-front-sania {
+  font-family: "Tile";
+  transition: font-variation-settings 0.3s ease;
+  -webkit-animation-name: tile-animation;
+          animation-name: tile-animation;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+/*Card 16 Styling*/
+#card-front16 {
+  background-color: #FFFFFF;
+}
+
+#card-front-info {
+  font-family: "Rigorosa Mono";
+  font-size: 80px;
+  margin-top: 50px;
+}
+
+#card-back-info {
+  overflow-y: auto;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+/*Links*/
+.card-back a {
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  color: #000000;
+  font-family: "Rigorosa Mono";
+}
+
+#card-back-info::-webkit-scrollbar {
+  width: 18px;
+}
+
+#card-back-info::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#card-back-info::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 18px;
+  border: 6px black;
+}
+
+.card-back a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+.card-back a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+.card-back a:active {
+  color: #000000;
+  text-decoration: none;
+}

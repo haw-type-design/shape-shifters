@@ -1,0 +1,213 @@
+@font-face {font-family: "NeueSchrift"; src: url("../assets/carloonly.github.io/NeueSchriftVF.woff2")
+}
+body {
+    background-color: #fffff;
+}
+
+.bg-anim {
+    background-color: #ff0000;
+    animation: background-animation infinite alternate;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 170px;
+    font-family: "NeueSchrift";
+    line-height:120%
+        background-color: white;
+    width: 100vw;
+    animation: headline-animation infinite alternate linear;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    text-align: center;
+}
+
+
+.Text {  
+    font-size: 80px;
+    font-family: "NeueSchrift";
+    animation: headline-animation infinite alternate linear;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    line-height: 75px;
+
+}
+
+.animate { animation: headline-animation 3s alternate infinite,font-animation 10s infinite alternate !important;}
+
+
+
+@keyframes headline-animation {
+    0%{ 
+        font-variation-settings:'wght' 100;
+    }
+    100% { 
+        font-variation-settings:'wght' 900;
+    }
+}
+@keyframes background-animation {
+    0%, 100%{ 
+        background-color:#ff0000;
+    }
+    20% { 
+        background-color:#fff500;
+    }
+    40% { 
+        background-color:#00ffc2;   
+    } 
+    60% { 
+        background-color:#00fff0;
+    } 
+    80% { 
+        background-color:#ff00d6;
+    }
+}
+@keyframes font-animation {
+    0%, 100%{ 
+        color:#ff0000;
+    }
+    20% { 
+        color:#fff500;
+    }
+    40% { 
+        color:#00ffc2;   
+    } 
+    60% { 
+        color:#00fff0;
+    } 
+    80% { 
+        color:#ff00d6;
+    }
+}
+
+h2 {
+    font-size: 150px;
+    font-family: "NeueSchrift";
+    background-color: background-animation;
+    color: black;
+    line-height:120%;
+    width: 100vw;
+    animation: headline-animation infinite alternate linear;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    line-height: 150px;
+}
+
+h3 {
+    font-size: 150px;
+    font-family: "NeueSchrift";
+    background-color: background-animation;
+    font-color: black;
+    width: 100vw;
+    animation: headline-animation infinite alternate linear;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    line-height: 150px;
+}
+
+h4 {
+    font-size: 150px;
+    font-family: "NeueSchrift";
+    background-color: background-animation;
+    font-color: black;
+    width: 100vw;
+    animation: headline-animation infinite alternate linear;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    line-height: 150px;
+}
+
+h5 {
+    font-size: 150px;
+    font-family: "NeueSchrift";
+    background-color: background-animation;
+    font-color: black;
+    width: 100vw;
+    animation: headline-animation infinite alternate linear;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    line-height: 150px;
+}
+
+h6 {
+    font-size: 150px;
+    font-family: "NeueSchrift";
+    background-color: background-animation;
+    font-color: black;
+    width: 100vw;
+    animation: headline-animation infinite alternate linear;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    line-height: 150px;
+}
+
+h7 {
+    font-size: 150px;
+    font-family: "NeueSchrift";
+    background-color: background-animation;
+    font-color: black;
+    width: 100vw;
+    animation: headline-animation infinite alternate linear;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    line-height: 200px;
+}
+
+.btn {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    top: 65px;
+    right:-400px;
+    width: 180px;
+    height: 44px;
+    cursor: pointer;
+    border: 1px solid #080808;
+    outline: none;
+    transition: 1s ease-in-out;
+    align-self: center;
+}
+
+svg {
+    position: relative;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 0.1s ease-in-out;
+    background: #08090a;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: white;
+    line-height:0.95;
+    font-size: 52px;
+    font-family: "NeueSchrift";
+    font-variation-settings:'wght' 100;
+    animation: headline-animation infinite alternate linear;
+    animation-duration: 3s;
+    animation-delay: 3s;
+
+}
+
+
+.wrapper{
+    display: flex;
+    width:100%;
+}

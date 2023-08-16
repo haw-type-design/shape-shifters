@@ -1,0 +1,411 @@
+@font-face {
+    font-family: "Impossible";
+    src: url("../assets/phuongdang104.github.io/ImpossibletypefacefinalVF.woff2");
+} 
+
+@font-face {
+    font-family: "Test Alphabet";
+    src: url("../assets/phuongdang104.github.io/Impossible_novariable-Regular.woff2");
+} 
+
+.headline {
+    font-family: "Impossible";
+    font-size: 70px;
+    color: #FF0000;
+    text-align: left;
+    font-variation-settings: 'wght' 0, 'wdth' 0, 'ital' 0, 'slnt' 0;
+    transition: 2s;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.headline:hover {
+    font-variation-settings: 'wght' 0, 'wdth' 0, 'ital' 100, 'slnt' 0; 
+}
+
+.headline_1 {
+    font-family: "Impossible";
+    font-size: 70px;
+    color: #FF0000;
+    text-align: left;
+    font-variation-settings: 'wght' 0, 'wdth' 0, 'ital' 0, 'slnt' 0;
+    transition: 2s;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.headline_1:hover {
+    font-variation-settings: 'wght' 100, 'wdth' 0, 'ital' 0, 'slnt' 0; 
+}
+
+.headline_2 {
+    font-family: "Impossible";
+    font-size: 70px;
+    color: #FF0000;
+    text-align: left;
+    font-variation-settings: 'wght' 0, 'wdth' 0, 'ital' 0, 'slnt' 0;
+    transition: 2s;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.headline_2:hover {
+    font-variation-settings: 'wght' 0, 'wdth' 100, 'ital' 0, 'slnt' 0; 
+}
+
+.headline1 {
+    font-family: "Impossible";
+    font-size: 190px;
+    color: #0500ff;
+    text-align: left;
+    font-variation-settings: 'wght' 0, 'wdth' 0, 'ital' 0, 'slnt' 0;
+    transition: 2s;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.headline1:hover {
+    font-variation-settings: 'wght' 0, 'wdth' 100, 'ital' 0, 'slnt' 0; 
+}
+
+.headline2 {
+    font-family: "Impossible";
+    font-size: 190px;
+    color: #0500ff;
+    text-align: left;
+    font-variation-settings: 'wght' 0, 'wdth' 0, 'ital' 0, 'slnt' 0;
+    transition: 2s;
+    margin-left: 30%;
+}
+.headline2:hover {
+    font-variation-settings: 'wght' 100, 'wdth' 0, 'ital' 0, 'slnt' 0; 
+}
+
+.headline3 {
+    font-family: "Impossible";
+    font-size: 190px;
+    color: #0500ff;
+    text-align: left;
+    font-variation-settings: 'wght' 0, 'wdth' 0, 'ital' 0, 'slnt' 0;
+    transition: 2s;
+    margin-right: 10%;
+    margin-left: 0%;
+}
+.headline3:hover {
+    font-variation-settings: 'wght' 0, 'wdth' 0, 'ital' 100, 'slnt' 0; 
+}
+
+.headline4 {
+    font-family: "Impossible";
+    font-size: 190px;
+    color: #0500ff;
+    text-align: left;
+    font-variation-settings: 'wght' 0, 'wdth' 0, 'ital' 0, 'slnt' 0;
+    transition: 2s;
+    margin-left: 0%;
+}
+.headline4:hover {
+    font-variation-settings: 'wght' 0, 'wdth' 0, 'ital' 0, 'slnt' 100; 
+}
+@keyframes headline4-animation {
+    0% {font-variation-settings: 'wght' 0, 'wdth' 0, 'ital' 0, 'slnt' 0; color: #0500ff;
+    }
+    100% {font-variation-settings: 'wght' 0, 'wdth' 100, 'ital' 0, 'slnt' 0; color: white;
+    }}
+
+
+.grid-container {
+    display: grid;
+    grid-template:
+        'header header header header header header'
+        'menu main main main main right';
+    gap: 10%;
+}
+
+.item1 { grid-area: header;}
+.item2 { grid-area: menu; width: 20vw;}
+.item3 { grid-area: main; padding: 0 60px;}
+.item4 { grid-area: right; width: 20vw;}
+
+.grid-container > div {
+    font-family: "Test Alphabet";
+    text-align: left;
+    font-size: 16px;
+    font-color: black;
+    background: white;
+}
+
+img { width: 100%; height: auto;}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0%; 
+}
+
+.grid-item {
+    padding: 0%;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5%; 
+}
+
+.grid-item2 {
+    padding: 5%;
+}
+
+.grid-container3 {
+    width: 100%; /* Độ rộng cố định của container */
+    height: auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 0%; 
+}
+
+.grid-item3 {
+    padding: 1%;
+}
+
+.grid-container4 {
+    display: grid;
+    grid-template:
+        'menu main main main main right';
+    gap: 10%;
+}
+
+.item1 { grid-area: header;}
+.item24 { grid-area: menu; width: 20vw;}
+.item34 { grid-area: main; padding: 0 60px;}
+.item44 { grid-area: right; width: 20vw;}
+
+.grid-container4 > div {
+    font-family: "Test Alphabet";
+    text-align: left;
+    font-size: 16px;
+    font-color: black;
+    background: white;
+}
+
+p {
+    font-family: "Test Alphabet";
+    font-size: 15px;
+    text-align: left;
+}
+
+p1 {
+    font-family: "Test Alphabet";
+    font-size: 15px;
+    text-align: left;
+}
+
+.space-left {
+    margin-left: 10%;
+    display:block;
+}
+
+.space-after {
+    margin-bottom: 20px;
+    display:block;
+}
+
+.space-after-headline {
+    margin-bottom: -80px;
+    display:block;
+}
+
+.first-video{ 
+    margin-right: 100%;
+}
+
+.space-top-headline {
+    margin-top: -30%;
+    display:block;
+}
+
+.space-top-headline1 {
+    margin-top: -4%;
+    display:block;
+}
+
+.space-top-headline2 {
+    margin-top: -25%;
+    display:block;
+}
+
+.space-top {
+    margin-top: 10%;
+    display:block;
+}
+
+.horizontal-line {
+    border-top: 1px solid blue;
+    margin: 50px 0;
+}
+
+body {
+    font-family: "Test Alphabet";
+    font-size: 16px;
+    text-align: left;
+    color: #0500ff;
+}
+
+.container {
+    max-width: 35%;
+    margin: 2% auto;
+    text-align: left;
+}
+
+#text {
+    font-family: "Impossible";
+    font-variation-settings: 'wght' 0, 'wdth' 0, 'ital' 0, 'slnt' 0;
+    color: white;
+    font-size: 90px;
+    margin-left: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: left;
+    word-break: break-all;
+}
+
+#text1 {
+    font-family: "Impossible";
+    font-variation-settings: 'wght' 0, 'wdth' 0, 'ital' 0, 'slnt' 0;
+    color: white;
+    font-size: 90px;
+    padding-left: 20% auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: left;
+    word-break: break-all;
+}
+
+#text2 {
+    font-family: "Impossible";
+    font-variation-settings: 'wght' 0, 'wdth' 0, 'ital' 0, 'slnt' 0;
+    color: white;
+    font-size: 70px;
+    padding-left: 20% auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+    word-break: break-all;
+}
+
+.backgroundbox {
+    background: #0500ff;
+    padding: 10%;
+}
+
+.backgroundbox1 {
+    background: #FF0000;
+    padding: 5%;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width:60%;
+    margin-left: 20%;
+
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: white;
+    height: 1px;
+}
+
+input[type="range"]::-moz-range-track {
+    background: white;
+    height: 1px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 18px;
+    width: 5px;
+    background: white;
+    margin-top: -5px;
+    border-radius: 10%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    height: 5px;
+    width: 15px;
+    background: white;
+    margin-top: -5px;
+    border-radius: 50%;
+}
+
+
+
+
+body { 
+}
+
+.sticky {
+    position: sticky;
+    top: 2%;
+}
+
+#hiddenText {
+    display: none;
+}
+
+#showButton {
+    font-family: "Test Alphabet";
+    margin-top: 10px;
+    background-color: #FF0000; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0;
+    outline: none;
+}
+
+#showButton:hover {
+    background-color: #0500ff; /
+}
+
+
+.video-container-two-columm {
+    width: 80%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+
+.video-container-right video {
+    width: 20%;
+    height: auto;
+}
+
+#axis1-value,#axis2-value,#axis3-value,#axis4-value,#axis11-value,#axis21-value,#axis31-value,#axis41-value,#axis12-value,#axis22-value,#axis32-value,#axis42-value {
+    color: white;
+}
+
+
+.image-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fixed-image {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}

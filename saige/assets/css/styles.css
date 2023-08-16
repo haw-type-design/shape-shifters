@@ -1,0 +1,627 @@
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-weight: normal;
+ 
+}
+
+
+#testarea {
+  font-size: 84px;
+   margin: 0.55em 0;
+  
+}
+
+h1{ 
+   font-size: 120px;  
+   display: block;
+   top: 0px;
+   line-height: 120px;
+   font-family: "Normalizer";
+   font-variation-settings: "wght" 900;
+   text-align: center;
+   padding: 180px;
+   transition: 2s;
+   
+   
+}
+
+h1:hover {
+  font-variation-settings: "wght" 100;
+  transition: 2s;
+  
+}
+
+
+
+@font-face {
+    font-family: "Normalizer";
+    src: url(../../fonts/DenormalizerVF.woff2);
+}
+
+
+h2{ 
+    font-size: 24px;
+    margin-bottom: 100px;
+    padding-top: 40px;
+    padding-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    z-index: 1;
+    
+    
+}
+
+
+h3{
+    text-align: left;
+    padding: 20px;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+p{  
+    font-size: 84px;
+    padding: 40px;
+    font-family: "Normalizer";
+    font-variation-settings: "wght" 900, "wght" 100;
+}
+
+a{  
+    color: black;
+    text-decoration: none;
+}
+
+
+/*
+
+  TIM SAGT: SCHREIBE DRY COED
+  DRY MEINT
+  DONT REPEEAT YOURSELG
+
+*/
+
+
+main {
+    font-family: "Normalizer";
+    width: 100%;
+    position: relative;
+    margin-bottom: -20px;
+}
+
+
+header{
+  position: absolute;
+  z-index: 1; 
+}
+
+.start {
+position: relative;  
+width: 100vw;
+height: 90vh;
+z-index: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+ 
+  @keyframes my-animation {
+  0%{
+    font-variation-settings: "wght" 900;
+  }
+  100%{
+    font-variation-settings: "wght" 100;
+  }
+  }
+
+/* 
+START PAGE
+*/
+img { 
+    width: 100%; 
+    position: relative;
+    pointer-events: none;
+    z-index: 1;
+    
+}
+
+.untertitle {
+font-family: 'Courier New', Courier, monospace;
+font-size: 24px;
+padding-top: 10px;
+display: block;
+width: 100%;
+max-width: 720px;
+margin: 0 auto;
+
+padding: 0 1rem;
+margin-bottom: 40px;
+}
+
+.raster-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+/* 
+  QUEST (OVERVIEW) PAGE
+*/
+
+.quest { 
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 40px;
+}
+
+.rechtsquest {
+  text-align: right;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.rechtsquest:hover,
+.rechtsquest.visited {
+  background-color: #39ff14;
+}
+
+.linksquest{
+  text-align: left;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  
+}
+
+.linksquest:hover,
+.linksquest.visited {
+  background-color:#ff69b4;
+}
+
+.rechtsquestzwei {
+  text-align: right;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.rechtsquestzwei:hover,
+.rechtsquestzwei.visited {
+  background-color:#ffff00;
+}
+
+.unten {
+  text-align: left;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.unten:hover,
+.unten.visited {
+  background-color:#1500ff;
+  padding-bottom: 10px;
+}  
+
+
+/* 
+CONTENT PAGE´S
+*/
+.text {
+  position: absolute;
+  
+}
+
+.rechts,
+.links {
+  line-height: 80px;
+
+  
+}
+
+.überschrift {
+  width: 100%;
+  position: fixed;
+  padding-bottom: 10px;
+  text-align: left;
+  
+}
+
+.rechts {
+    text-align: right;
+    padding-right: 70px;
+    padding-left: 20px;
+    margin-top: 40px;
+}
+
+.links {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 70px;
+}
+
+.text {
+    position: absolute;
+  
+}
+/* Bilder im text die sich bewegen nicht*/
+.rastertext {
+    width: 100%;
+    display: block;
+    pointer-events: none;
+}
+/* Text Highlights */
+
+.highlightgreen {
+  color: black; /* Standardfarbe des Textes */
+  
+}
+
+.highlightgreen:hover {
+  background: linear-gradient(0deg, rgba(255,0,255,0) 0%, rgba(255,0,255,0) 15%, rgb(57, 255, 20) 15%, rgb(57, 255, 20) 75%, rgba(255,0,255,0) 75%);
+  
+}
+
+.highlightpink {
+  color: black; /* Standardfarbe des Textes */
+}
+
+.highlightpink:hover {
+   /* Farbe bei Hover */
+  background: linear-gradient(0deg, rgba(255,0,255,0) 0%, rgba(255,0,255,0) 15%, rgb(255, 105, 180) 15%, rgb(255, 105, 180) 75%, rgba(255,0,255,0) 75%);
+  
+}
+
+.highlightyellow {
+  color: black; /* Standardfarbe des Textes */
+
+}
+
+.highlightyellow:hover {
+   /* Farbe bei Hover */
+  background: linear-gradient(0deg, rgba(255,0,255,0) 0%, rgba(255,0,255,0) 15%, rgb(255, 255, 0) 15%, rgb(255, 255, 0) 75%, rgba(255,0,255,0) 75%);
+  
+}
+
+.highlightblue {
+  color: black; /* Standardfarbe des Textes */
+
+}
+
+.highlightblue:hover {
+   /* Farbe bei Hover */
+  background: linear-gradient(0deg, rgba(255,0,255,0) 0%, rgba(255,0,255,0) 15%, rgb(21, 0, 255) 15%, rgb(21, 0, 255) 75%, rgba(255,0,255,0) 75%);
+  
+}
+
+/* menü container */
+.container {
+    position: relative;
+    overflow-x: hidden;
+  
+  }
+  
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    transition: width 0.3s;
+    z-index: 999;
+    overflow: hidden;
+  }
+
+  
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  
+
+  .menu p {
+    color: #000000;
+    margin: 0;
+    padding: 20px 30px 10px 20px;
+    font-size: 24px;
+    text-align: left;
+    visibility: hidden;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+  .menu img {
+    padding:  0px 30px 10px 20px;
+    display: block; /* Ändert das Display-Verhalten der Bilder auf "block", um sie vertikal anzuordnen */
+    margin: 10px auto; /* Zentriert die Bilder horizontal mit Auto-Margin */
+    visibility: hidden;
+   
+  }
+
+  .menu:hover p,
+  .menu:hover img {
+    visibility: visible;
+ 
+  }
+  
+  .neon-green,
+  .neon-greentype,
+  .neon-greenideas,
+  .neon-greenentangle {
+    background-color: #39ff14; /* Neon green color */
+    
+  }
+  
+  .pink,
+  .pinktype,
+  .pinkideas,
+  .pinkentangle {
+    background-color: #ff69b4; /* Pink color */
+    
+  }
+  
+  .yellow,
+  .yellowtype,
+  .yellowideas,
+  .yellowentangle {
+    background-color: #ffff00; /* Yellow color */
+    
+  }
+
+  .blue,
+  .blueideas {
+    background-color: #1500ff; /* Yellow color */
+    
+  }
+  
+  .content {
+    margin-right: 150px; /* Adjust the margin to accommodate the combined menu widths */
+    /* Your content styles go here */
+  }
+
+
+  .menu.neon-green:hover {
+    width: 550px; /* Breite für neon-green Menü */
+  }
+  .menu.neon-greentype:hover {
+    width: 920px; /* Breite für neon-green Menü */
+  }
+  .menu.neon-greenideas:hover {
+    width: 300px; /* Breite für neon-green Menü */
+  }
+  .menu.neon-greenentangle:hover {
+    width: 500px; /* Breite für neon-green Menü */
+  }
+  
+  .menu.pink:hover  {
+    width: 400px; /* Breite für pink Menü */
+  }
+  .menu.pinktype:hover  {
+    width: 640px; /* Breite für pink Menü */
+  }
+
+  .menu.pinkideas:hover  {
+    width: 350px; /* Breite für pink Menü */
+  }
+  .menu.pinkentangle:hover  {
+    width: 350px; /* Breite für pink Menü */
+  }
+  
+  .menu.yellow:hover  {
+    width: 230px; /* Breite für yellow Menü */
+  }
+
+  .menu.yellowtype:hover  {
+    width: 250px; /* Breite für yellow Menü */
+  }
+  .menu.yellowideas:hover  {
+    width: 245px; /* Breite für yellow Menü */
+  }
+  .menu.yellowentangle:hover  {
+    width: 400px; /* Breite für yellow Menü */
+  }
+ 
+
+  .menu.blue:hover  {
+    width: 200px; /* Breite für blue Menü */
+  }
+  .menu.blueideas:hover  {
+    width: 370px; /* Breite für blue Menü */
+  }
+  
+
+/* */
+
+/* 
+RULES PAGE
+*/
+
+/* 
+ENTANGLEMENT PAGE
+*/
+
+/* 
+IDEAS PAGE
+*/
+/*
+#bluefoot {
+color: #1500ff;
+height: 40px;
+}
+*/
+/* 
+FONT PAGE
+*/
+
+.vfont {
+  font-family: "Normalizer";
+  font-variation-settings: "wght" 900, "wght" 100;
+  
+  }
+  /*
+  .vfont:hover {
+    font-variation-settings: "wght" 100, "wght" 900;
+    color:#39ff14;
+  } 
+  */
+  
+ h4 {
+  font-size: 120px;
+  text-align: center;
+  padding-top: 160px;
+  padding-bottom: 80px;
+  line-height: 100%;
+  font-variation-settings: "wght" 900;
+  transition: 2s;
+ }
+
+ h4:hover {
+  font-variation-settings: "wght" 100;
+  transition: 2s;
+  
+}
+
+   /* Stil für den Regler */
+   input[type="range"] {
+    width: 20%;
+    background: transparent;
+    outline: none;
+    -webkit-appearance: none;
+   margin-left: 40px;
+   margin-top: 120px;
+   margin-bottom: 0px;
+  }
+
+  /* Stil für den Regler-Button */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 50px;
+    border-radius: 0%;
+    background-color: rgb(2, 255, 2);
+    cursor: pointer;
+    margin-top: -25px;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 3px;
+    background-color: #000000;
+  }
+  
+/* 
+ACCEPT PAGE
+NO ACCESS PAGE
+DOWNLOAD PAGE
+*/
+
+.warning{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.accept a:link{
+  color: black;
+  text-decoration: underline;
+  font-style: italic;
+}
+.accept a:hover {
+  color: rgb(0, 255, 89);
+}
+
+#idAttitude {
+  padding-top: 160px;
+  padding-bottom: 180px;
+  text-align: center;
+  margin-top: -20px;
+}
+
+#idAttitude:focus {
+  outline: 0;
+}
+    /*
+.slidecontainer {
+  position: absolute;
+  top: 400px;
+  left: 10px;
+  z-index: 9999;
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  background: transparent;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: 100px;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  background-image: url("assets/content/Regler.png");
+  background-size: contain;
+}
+
+
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: black;
+}
+
+.slidecontainer:hover::after {
+  content: "*guide the escapees from the system back to the grid to make the text readable.";
+  font-family: monospace;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  display: block;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 10px;
+  font-size: 12px;
+  border: #000000 solid 1px;
+}
+
+.slidecontainer::after {
+  content: "";
+  display: none;
+}
+*/

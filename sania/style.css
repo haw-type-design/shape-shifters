@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../assets/sannihoney7.github.io/TilesVF.woff2') format('woff2');
+    font-weight: 400;
+    font-stretch: expanded;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 10px;
+    margin-right: 0px;
+    margin-left: 10px;
+    background-color: #FFFFFF;
+}
+
+h1, p, #heading, #text {
+    font-family: 'CustomFont';
+    line-height: 90px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 100px;
+    margin-top: 1px;
+    margin-bottom: 9px;
+    margin-left: 1px;
+
+    font-weight: 1500;
+}
+
+p {
+    font-size: 1000px;
+    padding-top: 60px;
+}
+
+#text {
+    font-size: 100px;
+    text-transform: lowercase;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 1500;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content {
+    margin-top: 100px;
+    height: 50px;
+}
