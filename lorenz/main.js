@@ -265,7 +265,7 @@ async function imageCaller() {
 
     for(img of imgArray){
         console.log(img);
-        var a = await ImageEncryt(img.attr('src'), '55555555', 1 , 0);
+        var a = await ImageEncryt(img.attr('src'), '55555555', 1, 0);
         console.log(a);
         img.attr('src',  a);
         console.log(img);

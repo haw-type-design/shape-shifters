@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function imageCaller() {
     var imgArray=[];
-    $(".crpyt-img").each(function() {
+    $(".crypt-img").each(function() {
         imgArray.push($( this ));
     });
 
